@@ -29,6 +29,7 @@ The Spotify Web API provides a wide range of functionality for developers, inclu
 - And much more! You can find a complete list of available endpoints in the API Reference.
 
 ### Getting started with Web API - request an access token
+The access token is a string which contains the credentials and permissions that can be used to access a given resource (e.g artists, albums or tracks) or user's data (e.g your profile or your playlists).
 1. Firstly, you need to create a new Spotify account.
 
 2. Login to the Spotify Developer Dashboard, click on the Create an app button and enter the following information(just example):
@@ -78,7 +79,18 @@ Some examples include:
 - **PUT** ->	Changes and/or replaces resources or collections - update existing data,modify playlists, etc
 - **DELETE** ->	Deletes resources - remove playlists, tracks, etc
 
+### Tests used for validation
+I send responses to some endpoints, to get information for an album, for multiple albums identified by their Spotify IDs, information about an album’s tracks, information for a single artist identified by their
+unique Spotify ID, information for several artists based on their Spotify IDs, detailed profile information about the current user (including the current user's username), a list of the albums saved in the 
+current Spotify user's 'Your Music' library, save and remove one or more albums to the current user's 'Your Music' library, and check if one or more albums is already saved in the current Spotify user's 
+'Your Music' library.
 
-
+- `https://api.spotify.com/v1/albums/{id}`
+- `https://api.spotify.com/v1/artists/{id}`
+- `https://api.spotify.com/v1/artists/{id}/albums`
+- `https://api.spotify.com/v1/artists/{id}/top-tracks`
+- `https://api.spotify.com/v1/albums/{id}/tracks`
+- `https://api.spotify.com/v1/me`
+- `https://api.spotify.com/v1/me/albums`
 
 
