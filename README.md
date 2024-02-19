@@ -118,6 +118,42 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      ![getuserprofile_tests](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_tests.png)
      
      ![getuserprofile_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_results.png)
+
+4. Get user's saved albums
+
+   - HTTP method for request: GET
+   - Request description: Get a list of the albums saved in the current Spotify user's 'Your Music' library.
+   - Response status code: 200 OK
+  
+5. Save album for current user
+
+   - HTTP method for request: PUT
+   - Request description: Save one or more albums to the current user's 'Your Music' library.
+   - Response status code: 200 OK
      
-     
+6. Delete user's saved album
+
+   - HTTP method for request: DELETE
+   - Request description: Remove one or more albums from the current user's 'Your Music' library.
+   - Response status code: 200 OK
+
+7. Check user's saved album
+
+   - HTTP method for request: GET
+   - Request description: Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
+   - Response status code: 200 OK
+  
+8. Check user's saved album with a Spotify ID that is not among the saved ones
+
+
+9. Create playlist
+
+    - HTTP method for request: POST
+    - Request description: Create a playlist for a Spotify user. (The playlist will be empty until you add tracks.) Each user is generally limited to a maximum of 11000 playlists.
+    - Response status code: 201 Created
+  
+10. Change playlist details
+
+    - HTTP method for request: PUT
+    - Request description: Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
 
