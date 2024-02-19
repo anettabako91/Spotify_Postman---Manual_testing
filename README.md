@@ -91,10 +91,16 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
    - HTTP method for request: GET
    - Request description: Get Spotify catalog information for a single artist identified by their unique Spotify ID.
    - Response status code: 200 OK
+     
      API request and response:
+     
      ![getanartist](https://github.com/anettabako91/postman/blob/main/getanartist_get.png)
+  
+   
      JavaScript Tests:
+     
      ![getanartist_tests](https://github.com/anettabako91/postman/blob/main/getanartist_tests.png)
+     
      ![getanartist_results](https://github.com/anettabako91/postman/blob/main/getanartist_results.png)
 
 3. Get current user's profile
@@ -102,10 +108,15 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
    - HTTP method for request: GET
    - Request description: Get detailed profile information about the current user (including the current user's username).
    - Response status code: 200 OK
+  
      API request and response:
+     
      ![getuserprofile](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_get.png)
+     
      JavaScript Tests:
+     
      ![getuserprofile_tests](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_tests.png)
+     
      ![getuserprofile_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_results.png)
      
      
