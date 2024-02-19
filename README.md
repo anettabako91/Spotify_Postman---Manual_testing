@@ -1,19 +1,3 @@
-# postman
-
-Introducere
-
-Detalii din documentatie despre app testat
-
-Types available for testing - get/patch/put/delete
-
-tests used for validation
-test used with java based on the scripts from postman
-token creation if needed and how it was created
-
-requests with params and responses toghether with the messages
-
-pe urma un link catre colectia noastra pe care o exportam din postman cu ... export - fisier jason - il incarcam asa cum am facut data trecuta cu pdf
-
 ## Spotify - API Testing
 
 ### Introduction
@@ -93,4 +77,36 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
 - `https://api.spotify.com/v1/me`
 - `https://api.spotify.com/v1/me/albums`
 
+### Tests performed
+
+1. Create token
+   - HTTP method for request: POST
+   - Request description: Create a token valid for 1 hour
+   - Response status code: 200 OK
+     Below you can find a screenshot of the JavaScript tests:
+     ![createtoken](https://github.com/anettabako91/postman/blob/main/createtoken_tests_results.png)
+
+2. Get an artist
+
+   - HTTP method for request: GET
+   - Request description: Get Spotify catalog information for a single artist identified by their unique Spotify ID.
+   - Response status code: 200 OK
+     API request and response:
+     ![getanartist](https://github.com/anettabako91/postman/blob/main/getanartist_get.png)
+     JavaScript Tests:
+     ![getanartist_tests](https://github.com/anettabako91/postman/blob/main/getanartist_tests.png)
+     ![getanartist_results](https://github.com/anettabako91/postman/blob/main/getanartist_results.png)
+
+3. Get current user's profile
+
+   - HTTP method for request: GET
+   - Request description: Get detailed profile information about the current user (including the current user's username).
+   - Response status code: 200 OK
+     API request and response:
+     ![getuserprofile](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_get.png)
+     JavaScript Tests:
+     ![getuserprofile_tests](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_tests.png)
+     ![getuserprofile_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_results.png)
+     
+     
 
