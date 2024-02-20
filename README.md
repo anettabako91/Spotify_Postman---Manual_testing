@@ -188,47 +188,47 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
 
 #### 9. Create playlist
 
-    - HTTP method for request: POST
-    - Request description: Create a playlist for a Spotify user. (The playlist will be empty until you add tracks.) Each user is generally limited to a maximum of 11000 playlists.
-    - Response status code: 201 Created
+  - HTTP method for request: POST
+  - Request description: Create a playlist for a Spotify user. (The playlist will be empty until you add tracks.) Each user is generally limited to a maximum of 11000 playlists
+  - Response status code: 201 Created
   
-      API request and response
+  API request and response
 
-      ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_post.png)
+  ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_post.png)
 
-      JavaScript Tests
+  JavaScript Tests
 
-      ![createnewplaylist_tests](https://github.com/anettabako91/postman/blob/main/createplaylist_tests.png)
-      ![createnewplaylist_results](https://github.com/anettabako91/postman/blob/main/createplaylist_testresults.png)
+  ![createnewplaylist_tests](https://github.com/anettabako91/postman/blob/main/createplaylist_tests.png)
+  ![createnewplaylist_results](https://github.com/anettabako91/postman/blob/main/createplaylist_testresults.png)
 
-      After creating one more new playlist, I also found a bug - the album description was not saved according to the data provided by me. You can see below the new request, tests and results
+  After creating one more new playlist, I also found a bug - the album description was not saved according to the data provided by me. You can see below the new request, tests and results
 
-      ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_newrequest.png)
+  ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_newrequest.png)
 
-      ![testsandresults](https://github.com/anettabako91/postman/blob/main/createnewplaylist_testandresult.png)
+  ![testsandresults](https://github.com/anettabako91/postman/blob/main/createnewplaylist_testandresult.png)
       
   
 #### 10. Change playlist details
 
-    - HTTP method for request: PUT
-    - Request description: Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
-    - Response status code: 200 OK
+  - HTTP method for request: PUT
+  - Request description: Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
+  - Response status code: 200 OK
    
-      API request and response for getting playlist details
+  API request and response for getting playlist details
 
-      ![getdetails](https://github.com/anettabako91/postman/blob/main/getplaylist_old.png)
+  ![getdetails](https://github.com/anettabako91/postman/blob/main/getplaylist_old.png)
 
-      API request and response for changing playlist details
+  API request and response for changing playlist details
 
-      ![changedetails](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails.png)
+  ![changedetails](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails.png)
 
-      API request and response for getting the updated details
+  API request and response for getting the updated details
 
-      ![newdetails](https://github.com/anettabako91/postman/blob/main/getplaylistnew.png)
+  ![newdetails](https://github.com/anettabako91/postman/blob/main/getplaylistnew.png)
 
-      JavaScript Tests
+  JavaScript Tests
 
-      ![testsandresults](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails_testsandresults.png)
+  ![testsandresults](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails_testsandresults.png)
 
 ### Execution report for the Spotify collection
 
