@@ -1,0 +1,711 @@
+{
+	"id": "883fa2ed-11f1-41eb-bb45-a7e36080b48f",
+	"name": "SpotifyAPI",
+	"timestamp": "2024-02-20T11:30:20.729Z",
+	"collection_id": "30228161-f49c14dc-4f37-4778-b457-f8c7a918d116",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 36,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-02-20T11:30:15.730Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "c5350c22-aa6d-4838-a64b-a244654d10dd",
+			"name": "createToken",
+			"url": "https://accounts.spotify.com/api/token",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify if the respons returns an access token": true,
+				"Check the token type": true,
+				"Check that the token expires in one hour": true
+			},
+			"testPassFailCounts": {
+				"Verify if the respons returns an access token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check the token type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check that the token expires in one hour": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Verify if the respons returns an access token": true,
+					"Check the token type": true,
+					"Check that the token expires in one hour": true
+				}
+			]
+		},
+		{
+			"id": "2ba7aeeb-ff8b-4247-98ef-ae9a96253d29",
+			"name": "getAnArtist",
+			"url": "https://api.spotify.com/v1/artists/4nDoRrQiYLoBzwC5BhVJzF",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify if status code is 200": true,
+				"Verify that the status message is OK": true,
+				"Response time is less than 200ms": true,
+				"Check artist's name": true,
+				"Check if artist's popularity is between 75-85": true,
+				"Check artist's genres": true,
+				"Verify that the response has at least one image": true
+			},
+			"testPassFailCounts": {
+				"Verify if status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the status message is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check artist's name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if artist's popularity is between 75-85": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check artist's genres": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response has at least one image": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Verify if status code is 200": true,
+					"Verify that the status message is OK": true,
+					"Response time is less than 200ms": true,
+					"Check artist's name": true,
+					"Check if artist's popularity is between 75-85": true,
+					"Check artist's genres": true,
+					"Verify that the response has at least one image": true
+				}
+			]
+		},
+		{
+			"id": "54de41a5-3690-4702-95cc-7ee7ba9fd095",
+			"name": "getArtists",
+			"url": "https://api.spotify.com/v1/artists?ids=4nDoRrQiYLoBzwC5BhVJzF,0C8ZW7ezQVs4URX5aX7Kqx,6jJ0s89eD6GaHleKKya26X,5WUlDfRSoLAfcVSX1WnrxN,66CXWjxzNUsdJxJ2JdwvnR,7n2wHs1TKAczGzO7Dd2rGr",
+			"time": 172,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				172
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "57999d3d-129c-4691-b70d-4ea7b0dd327a",
+			"name": "getArtist'sAlbum",
+			"url": "https://api.spotify.com/v1/artists/6jJ0s89eD6GaHleKKya26X/albums",
+			"time": 294,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				294
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cdaf5004-550f-4d8a-9218-dcb1757ba8ac",
+			"name": "getAnArtist'sTopTracks",
+			"url": "https://api.spotify.com/v1/artists/1Xylc3o4UrD53lo9CvFvVg/top-tracks?market=GB",
+			"time": 265,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				265
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4652e3af-c040-47ac-9996-9f3928632f2f",
+			"name": "getAnArtist'sRelatedArtists",
+			"url": "https://api.spotify.com/v1/artists/4nDoRrQiYLoBzwC5BhVJzF/related-artists",
+			"time": 358,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				358
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0014e5a5-8a7e-408a-ba34-6f8d607bb1e3",
+			"name": "getAnAlbum",
+			"url": "https://api.spotify.com/v1/albums/3Vsbl0diFGw8HNSjG8ue9m",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				138
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d734ba2d-304e-4f5b-9726-b1fabf073dbd",
+			"name": "getSeveralAlbums",
+			"url": "https://api.spotify.com/v1/albums?ids=4FyGpObwABjn0o8Tdp7AZz,5pvFhFt1nzE8sCbm1wjNRv,3JSWZWeTHF4HDGt5Eozdy7,7uGmyYwDFJbSc1xs4hkEs2",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				221
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "513811a1-d555-4438-8b93-acb720a8a5f6",
+			"name": "createAuthorizationTokenUserLibraryRead",
+			"url": "https://accounts.spotify.com/api/token?grant_type=authorization_code&code=BQD3sMAp00JUdCf7CjeGOI_prKtdgpPo-zLfUgI7MM7ih_tAGlDFBS9dSWNIihGrv4Mc-9OiPYwAZdTjWTthMjLAlK-NYK3saqgAPUZBLpmv8mC7PIY&redirect_uri=http://itfactory/callback&scope=user-library-read&access_token=AUTH_VALUE",
+			"time": 57,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				57
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a17921f0-8865-4c9d-a191-7fda4bb00d4b",
+			"name": "postRefreshTokenUserLibraryReadModify",
+			"url": "https://accounts.spotify.com/api/token?grant_type=refresh_token&refresh_token=AQCqurpGoR1YyCz2CCxFEFC0ORUkRNkilmqZ6w_hyxwhZAc3YsD1FcX9u6mXQsZ0qbdYZj2ij45xWOXUDiSFW_BiaEr8fK77Rx3su4tC2WomJDS8OOzG-Lu4NnkBg5ZNw_U",
+			"time": 82,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				82
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f4d0e17c-808a-465c-a286-3afdfe097766",
+			"name": "getUser'sProfile",
+			"url": "https://api.spotify.com/v1/me",
+			"time": 77,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Check user's name": true,
+				"Check user's country": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check user's name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check user's country": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				77
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Check user's name": true,
+					"Check user's country": true
+				}
+			]
+		},
+		{
+			"id": "61912c6b-77d1-4bea-8caf-d33e8a6d2a44",
+			"name": "getUser'sSavedAlbums",
+			"url": "https://api.spotify.com/v1/me/albums",
+			"time": 400,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check if the artist Maluma appears among the saved albums": true,
+				"Check if the Don Juan album appears among the saved albums": true,
+				"Check if the artist Rihanna appears among the saved albums": true,
+				"Check if the Good Girl Gone Bad: Reloaded album appears among the saved albums": true
+			},
+			"testPassFailCounts": {
+				"Check if the artist Maluma appears among the saved albums": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if the Don Juan album appears among the saved albums": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if the artist Rihanna appears among the saved albums": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check if the Good Girl Gone Bad: Reloaded album appears among the saved albums": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				400
+			],
+			"allTests": [
+				{
+					"Check if the artist Maluma appears among the saved albums": true,
+					"Check if the Don Juan album appears among the saved albums": true,
+					"Check if the artist Rihanna appears among the saved albums": true,
+					"Check if the Good Girl Gone Bad: Reloaded album appears among the saved albums": true
+				}
+			]
+		},
+		{
+			"id": "5bb7fc7f-7e2c-4eec-9323-8464678407a9",
+			"name": "saveAlbumForCurrentUser",
+			"url": "https://api.spotify.com/v1/me/albums",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true,
+				"Status code name has string": true,
+				"Verify that response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true,
+					"Status code name has string": true,
+					"Verify that response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "210b267a-2476-4337-834f-6e67429f1383",
+			"name": "deleteUsersSavedAlbums",
+			"url": "https://api.spotify.com/v1/me/albums",
+			"time": 86,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				86
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7ca2bd6e-73c2-430e-b5ce-dbb7fa6e4eb6",
+			"name": "checkUsersSavedAlbums",
+			"url": "https://api.spotify.com/v1/me/albums/contains?ids=3JSWZWeTHF4HDGt5Eozdy7",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify if the respons returns a true value": true,
+				"Status code is 200": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Verify if the respons returns a true value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Verify if the respons returns a true value": true,
+					"Status code is 200": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "7ee997ce-ef33-4b4c-8ed2-e2a23ac66f8a",
+			"name": "checkUsersSavedAlbumsinvalidID",
+			"url": "https://api.spotify.com/v1/me/albums/contains?ids=5Nn3fX7CuJo7tbibtqASmf",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify if the respons returns a false value": true,
+				"Status code is 200": true,
+				"Body is correct": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Verify if the respons returns a false value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Verify if the respons returns a false value": true,
+					"Status code is 200": true,
+					"Body is correct": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "14a1189a-4cd6-4bf0-a016-09145f745190",
+			"name": "createplaylist",
+			"url": "https://api.spotify.com/v1/users/31qqcrc56rmo5h6oedqumhhohr7u/playlists",
+			"time": 187,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"status message is Created": true,
+				"Response time is less than 400ms": true,
+				"Check playlist name": true,
+				"Check playlist description": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status message is Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check playlist name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check playlist description": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"status message is Created": true,
+					"Response time is less than 400ms": true,
+					"Check playlist name": true,
+					"Check playlist description": false
+				}
+			]
+		},
+		{
+			"id": "059ab426-1a62-4aef-adfe-bedd7dd6d46c",
+			"name": "getplaylists",
+			"url": "https://api.spotify.com/v1/users/31qqcrc56rmo5h6oedqumhhohr7u/playlists",
+			"time": 143,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				143
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "465b564f-23bb-4ad9-b70e-1131b08ec452",
+			"name": "getplaylistafterchangedetails",
+			"url": "https://api.spotify.com/v1/playlists/1ltA5YrWWPN19HNQXkWHQw",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				112
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "515701b5-dcef-4341-a775-c9e05f8f4938",
+			"name": "changeplaylistdetails",
+			"url": "https://api.spotify.com/v1/playlists/1ltA5YrWWPN19HNQXkWHQw",
+			"time": 164,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify that response body is empty": true,
+				"Status code is 200": true,
+				"Response time is less than 400ms": true
+			},
+			"testPassFailCounts": {
+				"Verify that response body is empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				164
+			],
+			"allTests": [
+				{
+					"Verify that response body is empty": true,
+					"Status code is 200": true,
+					"Response time is less than 400ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3153,
+	"collection": {
+		"requests": [
+			{
+				"id": "c5350c22-aa6d-4838-a64b-a244654d10dd",
+				"method": "POST"
+			},
+			{
+				"id": "2ba7aeeb-ff8b-4247-98ef-ae9a96253d29",
+				"method": "GET"
+			},
+			{
+				"id": "54de41a5-3690-4702-95cc-7ee7ba9fd095",
+				"method": "GET"
+			},
+			{
+				"id": "57999d3d-129c-4691-b70d-4ea7b0dd327a",
+				"method": "GET"
+			},
+			{
+				"id": "cdaf5004-550f-4d8a-9218-dcb1757ba8ac",
+				"method": "GET"
+			},
+			{
+				"id": "4652e3af-c040-47ac-9996-9f3928632f2f",
+				"method": "GET"
+			},
+			{
+				"id": "0014e5a5-8a7e-408a-ba34-6f8d607bb1e3",
+				"method": "GET"
+			},
+			{
+				"id": "d734ba2d-304e-4f5b-9726-b1fabf073dbd",
+				"method": "GET"
+			},
+			{
+				"id": "513811a1-d555-4438-8b93-acb720a8a5f6",
+				"method": "POST"
+			},
+			{
+				"id": "a17921f0-8865-4c9d-a191-7fda4bb00d4b",
+				"method": "POST"
+			},
+			{
+				"id": "f4d0e17c-808a-465c-a286-3afdfe097766",
+				"method": "GET"
+			},
+			{
+				"id": "61912c6b-77d1-4bea-8caf-d33e8a6d2a44",
+				"method": "GET"
+			},
+			{
+				"id": "5bb7fc7f-7e2c-4eec-9323-8464678407a9",
+				"method": "PUT"
+			},
+			{
+				"id": "210b267a-2476-4337-834f-6e67429f1383",
+				"method": "DELETE"
+			},
+			{
+				"id": "7ca2bd6e-73c2-430e-b5ce-dbb7fa6e4eb6",
+				"method": "GET"
+			},
+			{
+				"id": "7ee997ce-ef33-4b4c-8ed2-e2a23ac66f8a",
+				"method": "GET"
+			},
+			{
+				"id": "14a1189a-4cd6-4bf0-a016-09145f745190",
+				"method": "POST"
+			},
+			{
+				"id": "059ab426-1a62-4aef-adfe-bedd7dd6d46c",
+				"method": "GET"
+			},
+			{
+				"id": "465b564f-23bb-4ad9-b70e-1131b08ec452",
+				"method": "GET"
+			},
+			{
+				"id": "515701b5-dcef-4341-a775-c9e05f8f4938",
+				"method": "PUT"
+			}
+		]
+	}
+}
