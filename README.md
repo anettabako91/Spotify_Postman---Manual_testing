@@ -124,18 +124,38 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
    - HTTP method for request: GET
    - Request description: Get a list of the albums saved in the current Spotify user's 'Your Music' library.
    - Response status code: 200 OK
+
+     JavaScript Tests:
+
+     ![getuser'ssavedalbums_tests](https://github.com/anettabako91/postman/blob/main/getuser'ssavedalbums_tests.png)
+     
+     ![getuser'ssavedalbums_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_tests.png)
   
 5. Save album for current user
 
    - HTTP method for request: PUT
    - Request description: Save one or more albums to the current user's 'Your Music' library.
    - Response status code: 200 OK
+
+     API request and response
+
+     ![savealbumforcurrentuser_put](https://github.com/anettabako91/postman/blob/main/save_albumforcurrentuser_put.png)
+
+     JavaScript Tests:
+
+     ![savealbumforcurrentuser_tests](https://github.com/anettabako91/postman/blob/main/savealbumforcurrentuser_tests.png)
+     
+     ![savealbumforcurrentuser_results](https://github.com/anettabako91/postman/blob/main/savealbumforcurrentuser_results.png)
      
 6. Delete user's saved album
 
    - HTTP method for request: DELETE
    - Request description: Remove one or more albums from the current user's 'Your Music' library.
    - Response status code: 200 OK
+  
+     API request and response
+
+     ![deleteuser'ssavedalbum_delete](https://github.com/anettabako91/postman/blob/main/deleteuser'ssavedalbums_delete.png)
 
 7. Check user's saved album
 
@@ -143,7 +163,27 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
    - Request description: Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
    - Response status code: 200 OK
   
+     API request and response
+
+     ![checkuser'ssavedalbum](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_get.png)
+
+     JavaScript Tests
+
+     ![checkuser'ssavedalbum_testandresult](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_tests_results.png)
+  
 8. Check user's saved album with a Spotify ID that is not among the saved ones
+
+   - HTTP method for request: GET
+   - Request description: Check if the response is false if an album is not saved in the current Spotify user's 'Your Music' library.
+   - Response status code: 200 OK
+  
+     API request and response
+
+     ![checkuser'ssavedalbum_invalidid](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_invalidid_request.png)
+
+     JavaScript Tests
+
+     ![checkuser'ssavedalbuminvalidid_testandresult](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_invalidid_testsandresults.png)
 
 
 9. Create playlist
@@ -152,8 +192,41 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
     - Request description: Create a playlist for a Spotify user. (The playlist will be empty until you add tracks.) Each user is generally limited to a maximum of 11000 playlists.
     - Response status code: 201 Created
   
+      API request and response
+
+      ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_post.png)
+
+      JavaScript Tests
+
+      ![createnewplaylist_tests](https://github.com/anettabako91/postman/blob/main/createplaylist_tests.png)
+      ![createnewplaylist_results](https://github.com/anettabako91/postman/blob/main/createplaylist_testresults.png)
+
+      After creating one more new playlist, I also found a bug - the album description was not saved according to the data provided by me. You can see below the new request, tests and results
+
+      ![createnewplaylist](https://github.com/anettabako91/postman/blob/main/createplaylist_newrequest.png)
+
+      ![testsandresults](https://github.com/anettabako91/postman/blob/main/createnewplaylist_testandresult.png)
+      
+  
 10. Change playlist details
 
     - HTTP method for request: PUT
     - Request description: Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
+    - Response status code: 200 OK
+   
+      API request and response for getting playlist details
+
+      ![getdetails](https://github.com/anettabako91/postman/blob/main/getplaylist_old.png)
+
+      API request and response for changing playlist details
+
+      ![changedetails](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails.png)
+
+      API request and response for getting the updated details
+
+      ![newdetails](https://github.com/anettabako91/postman/blob/main/getplaylistnew.png)
+
+      JavaScript Tests
+
+      ![testsandresults](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails_testsandresults.png)
 
