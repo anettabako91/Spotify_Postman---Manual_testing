@@ -79,14 +79,14 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
 
 ### Tests performed
 
-1. Create token
+#### 1. Create token
    - HTTP method for request: POST
    - Request description: Create a token valid for 1 hour
    - Response status code: 200 OK
      Below you can find a screenshot of the JavaScript tests:
      ![createtoken](https://github.com/anettabako91/postman/blob/main/createtoken_tests_results.png)
 
-2. Get an artist
+#### 2. Get an artist
 
    - HTTP method for request: GET
    - Request description: Get Spotify catalog information for a single artist identified by their unique Spotify ID.
@@ -103,7 +103,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      
      ![getanartist_results](https://github.com/anettabako91/postman/blob/main/getanartist_results.png)
 
-3. Get current user's profile
+#### 3. Get current user's profile
 
    - HTTP method for request: GET
    - Request description: Get detailed profile information about the current user (including the current user's username).
@@ -119,7 +119,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      
      ![getuserprofile_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_results.png)
 
-4. Get user's saved albums
+#### 4. Get user's saved albums
 
    - HTTP method for request: GET
    - Request description: Get a list of the albums saved in the current Spotify user's 'Your Music' library.
@@ -131,7 +131,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      
      ![getuser'ssavedalbums_results](https://github.com/anettabako91/postman/blob/main/getuser'sprofile_tests.png)
   
-5. Save album for current user
+#### 5. Save album for current user
 
    - HTTP method for request: PUT
    - Request description: Save one or more albums to the current user's 'Your Music' library.
@@ -147,7 +147,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      
      ![savealbumforcurrentuser_results](https://github.com/anettabako91/postman/blob/main/savealbumforcurrentuser_results.png)
      
-6. Delete user's saved album
+#### 6. Delete user's saved album
 
    - HTTP method for request: DELETE
    - Request description: Remove one or more albums from the current user's 'Your Music' library.
@@ -157,7 +157,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
 
      ![deleteuser'ssavedalbum_delete](https://github.com/anettabako91/postman/blob/main/deleteuser'ssavedalbums_delete.png)
 
-7. Check user's saved album
+#### 7. Check user's saved album
 
    - HTTP method for request: GET
    - Request description: Check if one or more albums is already saved in the current Spotify user's 'Your Music' library.
@@ -171,7 +171,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
 
      ![checkuser'ssavedalbum_testandresult](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_tests_results.png)
   
-8. Check user's saved album with a Spotify ID that is not among the saved ones
+#### 8. Check user's saved album with a Spotify ID that is not among the saved ones
 
    - HTTP method for request: GET
    - Request description: Check if the response is false if an album is not saved in the current Spotify user's 'Your Music' library.
@@ -186,7 +186,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
      ![checkuser'ssavedalbuminvalidid_testandresult](https://github.com/anettabako91/postman/blob/main/checkuser'ssavedalbum_invalidid_testsandresults.png)
 
 
-9. Create playlist
+#### 9. Create playlist
 
     - HTTP method for request: POST
     - Request description: Create a playlist for a Spotify user. (The playlist will be empty until you add tracks.) Each user is generally limited to a maximum of 11000 playlists.
@@ -208,7 +208,7 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
       ![testsandresults](https://github.com/anettabako91/postman/blob/main/createnewplaylist_testandresult.png)
       
   
-10. Change playlist details
+#### 10. Change playlist details
 
     - HTTP method for request: PUT
     - Request description: Change a playlist's name and public/private state. (The user must, of course, own the playlist.)
@@ -229,4 +229,22 @@ current Spotify user's 'Your Music' library, save and remove one or more albums 
       JavaScript Tests
 
       ![testsandresults](https://github.com/anettabako91/postman/blob/main/changeplaylistdetails_testsandresults.png)
+
+### Execution report for the Spotify collection
+
+Below you can find the execution report that was generated through the Postman collection runner:
+
+![runcollection](https://github.com/anettabako91/postman/blob/main/runcollection.png)
+
+[Here](https://github.com/anettabako91/postman/blob/main/SpotifyAPI.postman_test_run.json) you can find the exported results in json file.
+
+The collection was also run through newman directly from the terminal, you can see the results below: (in the meantime the test regarding the response time in 'Change playlist details' passed and it is no longer an error)
+
+![newman_run](https://github.com/anettabako91/postman/blob/main/runcollection_newman.png)
+
+### Conclusion
+
+A comprehensive set of 37 tests was created, covering various functionalities in the Spotify Web API. Tests included GET, POST, PUT and DELETE HTTP methods for an extensive coverage.
+All the collection was successfully executed using Postman's runner and Newman. Detailed execution report was generated, providing information about each test case's perfomance and status.
+
 
